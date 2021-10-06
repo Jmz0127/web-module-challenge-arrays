@@ -50,7 +50,7 @@ function copy(array) {
 	return originalFlavors;
 }
 
-console.log(copy(...originalFlavors));
+console.log('task 1', copy(...originalFlavors));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -63,9 +63,16 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 // 1 parameter called array
-function is31Flavors(/*your code here*/) {
+function is31Flavors(array) {
+	if ((array.length = 31)) {
+		return true;
+	} else {
+		return false;
+	}
 	// conditional here if the array.length is exactly (exact match) 31 flavors return true, else return false
 }
+
+console.log('task 2', is31Flavors(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
