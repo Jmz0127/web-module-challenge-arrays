@@ -47,7 +47,10 @@ Use the copy function below to do the following:
 // 1 parameter called array
 function copy(array) {
 	// return a copy of an array, use spread operator
+	return originalFlavors;
 }
+
+console.log(copy(...originalFlavors));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
