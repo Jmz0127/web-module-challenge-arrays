@@ -47,10 +47,11 @@ Use the copy function below to do the following:
 // 1 parameter called array
 function copy(array) {
 	// return a copy of an array, use spread operator
-	return originalFlavors;
+	const copyFlavor = [...array];
+	return copyFlavor;
 }
 
-console.log('task 1', copy(...originalFlavors));
+console.log('task 1', copy(originalFlavors));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -87,11 +88,13 @@ Use the addFlavor function below to do the following:
 */
 
 // 2 parameters - array, flavor
-function addFlavor(/*your code here*/) {
+function addFlavor(array, flavor) {
+	array.unshift(flavor);
+	return array;
 	// use unshift to add flavor to front of array
 	// and then return the array
 }
-
+console.log('task 3', addFlavor(originalFlavors, 'Rainbow Sherbert'));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
 
