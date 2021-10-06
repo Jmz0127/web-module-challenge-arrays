@@ -107,10 +107,13 @@ Use the removeLastFlavor function below to do the following:
 */
 
 // 1 parameter - array
-function removeLastFlavor(/*your code here*/) {
+function removeLastFlavor(array) {
+	array.pop();
+	return array;
 	// remove item at the end of the array using pop
 	// and then eturn the array
 }
+console.log('task 4', removeLastFlavor(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
